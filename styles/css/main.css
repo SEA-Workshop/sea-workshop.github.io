@@ -76,7 +76,7 @@
   --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.05), 0 10px 10px rgba(0, 0, 0, 0.04);
   
   /* Container width */
-  --container-max-width: 1200px;
+  --container-max-width: 1000px;
   --container-padding: var(--space-4);
 }
 
@@ -469,7 +469,7 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 3rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -558,7 +558,7 @@ footer {
   line-height: 2rem;
   font-weight: bold;
   font-family: 'Palatino', 'Palatino Linotype', serif;
-  color: var(--color-secondary);
+  color: var(--color-primary);
   transition: color 0.2s;
 }
 .bento-title:hover {
@@ -566,23 +566,11 @@ footer {
 }
 
 .bento-desc {
-  display: none;
-  font-size: 1rem;
-  color: var(--color-neutral-500);
-  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
   font-weight: 400;
-  line-height: 1.4;
-  transition: opacity 0.3s ease;
-}
-
-.bento-topic.active .bento-desc,
-.bento-topic:hover .bento-desc {
-  display: block;
-}
-
-.bento-topic:hover .bento-title,
-.bento-topic.active .bento-title {
-  color: var(--color-primary);
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--color-neutral-700);
 }
 
 .schedule-table {
@@ -660,7 +648,7 @@ footer {
 }
 .organizer-card {
   background: var(--color-white);
-  padding: 2rem;
+  padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -720,6 +708,7 @@ footer {
   display: flex;
   min-height: 60vh;
   align-items: start;
+  max-width: 1000px;
   gap: 3rem;
   padding: 2rem 0;
   border-bottom: 1px solid var(--color-neutral-200);
@@ -761,7 +750,7 @@ footer {
   font-size: 2.2rem;
   color: var(--color-neutral-400);
   border-top: 1px solid var(--color-neutral-200);
-  padding: 1.5rem 0;
+  padding: 1.5rem 1rem;
   cursor: pointer;
   transition: color 0.2s;
   font-family: 'Inter', Arial, sans-serif;
@@ -771,14 +760,10 @@ footer {
 .bento-topic .bento-num {
   font-size: 0.8rem;
   margin-right: 2rem;
-  color: var(--color-neutral-400);
+  color: var(--color-neutral-800);
   opacity: 0.7;
   font-family: 'Inter', Arial, sans-serif;
   font-weight: 400;
-}
-.bento-topic.active,
-.bento-topic:hover {
-  color: #fff;
 }
 
 .bento-topic-content {
@@ -788,6 +773,7 @@ footer {
 
 .footer-text {
   text-align: center;
+  color: var(--color-neutral-400);
 }
 
 .contact-blockquote {
@@ -838,6 +824,22 @@ footer {
   margin-left: 0.15em;
   vertical-align: middle;
   stroke: currentColor;
+}
+
+.organizer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.organizer-contact a {
+  font-size: 0.8rem;
+  color: var(--color-neutral-500);
+  text-decoration: none;
+  transition: color 0.2s, text-decoration 0.2s;
+}
+.organizer-contact a:hover {
+  color: var(--color-primary);
 }
 
 /* Mobile nav toggle icon */
@@ -900,4 +902,10 @@ footer {
   .section-header-component {
     padding-bottom: 2rem;
   }
+}
+
+/* Shared section content width for all main content paragraphs */
+.section-content {
+  width: 100%;
+  margin: 0 auto;
 }
