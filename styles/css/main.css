@@ -711,11 +711,6 @@ footer {
 .pc-list-grid > div {
   padding: 0.25em 0;
 }
-@media (max-width: 600px) {
-  .pc-list-grid {
-    grid-template-columns: 1fr;
-  }
-}
 
 .display-text-palatino {
   font-family: 'Palatino', 'Palatino Linotype', serif;
