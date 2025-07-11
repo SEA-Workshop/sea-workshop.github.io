@@ -23,7 +23,7 @@
   <header id="header" class="fixed-top d-flex align-items-center header sticky-header">
     <div class="navbar-container">
       <div class="navbar-logo">
-        <a href="#home">SEA Workshop</a>
+        <span class="bento-title">SEA Workshop 2025</span>
       </div>
       <nav id="navbar" class="navbar">
         <ul>
@@ -38,6 +38,9 @@
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
+      <div class="navbar-logo">
+        <img src="images/neurips.svg" alt="NeurIPS_LOGO" class="navbar-logo-img" style="zoom: 0.35;">
+      </div>
     </div>
   </header><!-- End Header -->
 
@@ -82,7 +85,7 @@
     </section>
 
     <!-- Topics Section -->
-    <!-- <section id="topics" class="fade-in">
+    <section id="topics" class="fade-in">
       <div class="container">
         <div class="section-header-component">
           <div class="section-header-row">
@@ -96,8 +99,8 @@
               <span class="bento-num">1</span>
               <div class="bento-topic-content">
                 <span class="bento-title">Environment Design and Simulation</span>
-                <span class="bento-desc">Task formalization, compositionality, affordance modeling, procedural
-                  generation, and simulator integration.</span>
+                <span class="bento-desc">Task formulation, action-space design, environment
+                  generation, compositionality, and agent integration.</span>
               </div>
             </div>
             <div class="bento-topic" data-img="topic2.png">
@@ -112,7 +115,7 @@
               <span class="bento-num">3</span>
               <div class="bento-topic-content">
                 <span class="bento-title">LLMs in Interactive Environments</span>
-                <span class="bento-desc">Policy learning, planning, reward shaping, hybrid training (e.g., RLHF, PPO),
+                <span class="bento-desc">Reinforcement learning, policy learning, reward modeling, hybrid training,
                   and fine-tuning through interaction.</span>
               </div>
             </div>
@@ -120,14 +123,14 @@
               <span class="bento-num">4</span>
               <div class="bento-topic-content">
                 <span class="bento-title">Tool-Use and Software Environments</span>
-                <span class="bento-desc">Agents as programmers, API orchestration, tool scaffolding, software
+                <span class="bento-desc">Workforce, Agents as programmers, API orchestration, tool design, software
                   manipulation, and web navigation.</span>
               </div>
             </div>
             <div class="bento-topic" data-img="topic5.png">
               <span class="bento-num">5</span>
               <div class="bento-topic-content">
-                <span class="bento-title">Multi-Agent and Social Environments</span>
+                <span class="bento-title">Multi-Agent Systems and Environments</span>
                 <span class="bento-desc">Scaling agent populations, emergent behaviors, communication, coordination,
                   competition, and role dynamics.</span>
               </div>
@@ -151,7 +154,7 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <!-- Call for Papers Section -->
     <section id="call-for-papers" class="fade-in">
@@ -171,21 +174,22 @@
           <ul style="list-style-type: disc; padding-left: 1em;">
             <li><strong>Task &amp; World Specification</strong>: formalization, compositionality, affordance modeling,
               procedural generation, simulator integration.</li>
+            <ul>
+              <li>[Digital Workforce]: multi-tool environments where agents orchestrate software applications,
+                automate workflows, and coordinate complex tasks across different platforms.
+              </li>
+              <li>[Scientific Discovery]: laboratory automation environments for experimental design, data
+                analysis, and hypothesis testing.
+              </li>
+              <li>[Social Interactions]: multi-agent social environments with conversation dynamics,
+                collaboration patterns, and community formation workflows.
+              </li>
+              <li>[Recommendation Systems]: recommendation environments with user behavior
+                modeling, content discovery, and personalized suggestion workflows.
+              </li>
+            </ul>
             <li><strong>Evaluation Methodologies</strong>: multi‑step interaction metrics, generalization tests,
               open‑ended benchmarks, curriculum scaling, human‑in‑the‑loop assessments.</li>
-            <li><strong>Environment Exemplars</strong> (illustrative, non‑exhaustive):
-              <ul>
-                <li><em>CodeArena</em>: multi‑language software‑engineering sandbox for agent tool‑use benchmarking.
-                </li>
-                <li><em>HouseWorld</em>: 3‑D embodied household simulator with spatial reasoning tasks.</li>
-                <li><em>WebShop‑X</em>: dynamic e‑commerce website emulator for goal‑conditioned browsing and checkout.
-                </li>
-                <li><em>SocialTown</em>: multi‑agent social environment for coordination, negotiation, and role‑play
-                  evaluation.</li>
-              </ul>
-            </li>
-            <li><strong>Artifacts &amp; Reproducibility</strong>: dataset/specification releases, leaderboards,
-              reproducibility studies.</li>
           </ul>
           <br>
           <!-- General Track -->
@@ -751,5 +755,7 @@
 
   <script src="styles/js/main.js"></script>
 </body>
+
+</html>
 
 </html>

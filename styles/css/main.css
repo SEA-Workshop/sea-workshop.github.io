@@ -959,6 +959,10 @@ footer {
     font-size: 1rem;
     padding: 4px 0;
   }
+  /* Hide the NeurIPS logo on mobile to prevent blocking the mobile menu */
+  .navbar-logo:last-child {
+    display: none;
+  }
   .bento-section {
     flex-direction: column;
     align-items: stretch;
