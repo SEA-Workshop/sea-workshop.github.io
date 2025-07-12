@@ -476,27 +476,6 @@ footer {
   padding: 0;
 }
 
-/* Mobile nav: stack vertically when .navbar-mobile is active */
-#navbar.navbar-mobile > ul {
-  flex-direction: column;
-  align-items: flex-start;
-  background: var(--color-white);
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  padding: 1rem 2rem;
-  z-index: 999;
-}
-
-#navbar.navbar-mobile > ul li {
-  width: 100%;
-  margin-bottom: 0.5rem;
-}
-
-#navbar.navbar-mobile > ul li:last-child {
-  margin-bottom: 0;
-}
 
 /* Remove nav-link underline animation */
 .nav-link::after {
@@ -1040,6 +1019,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+  #navbar {
+    display: none;
+    background: var(--color-neon-light);
+  }
   .navbar-container {
     padding: 0;
   }
