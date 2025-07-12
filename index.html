@@ -20,28 +20,21 @@
 
 <body>
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center header sticky-header">
+  <header id="header" class="fixed-top d-flex header">
     <div class="navbar-container">
-      <div class="navbar-logo">
-        <span class="bento-title">SEA Workshop 2025</span>
+      <div class="navbar-title-group">
+        <a href="https://neurips.cc/" target="_blank" class="navbar-logo">
+          <img src="images/neurips.svg" alt="NeurIPS_LOGO" class="navbar-logo-img">
+        </a>
+        <a href="#home" class="navbar-title">SEA Workshop 2025</a>
       </div>
       <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#home">Home</a></li>
-          <!-- <li><a class="nav-link scrollto" href="#topics">Topics</a></li> -->
-          <li><a class="nav-link scrollto" href="#call-for-papers">Call for Papers</a></li>
-          <li><a class="nav-link scrollto" href="#speakers">Speakers</a></li>
-          <li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
-          <li><a class="nav-link scrollto" href="#organizers">Organizers</a></li>
-          <!-- <li><a class="nav-link scrollto" href="#advisory-board">Advisory Board</a></li>
-          <li><a class="nav-link scrollto" href="#support-team">Support Team</a></li> -->
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-      <div class="navbar-logo">
-        <img src="images/neurips.svg" alt="NeurIPS_LOGO" class="navbar-logo-img" style="zoom: 0.35;">
-      </div>
+          <a class="nav-link scrollto" href="#call-for-papers">Call for Papers</a>
+          <a class="nav-link scrollto" href="#speakers">Speakers</a>
+          <a class="nav-link scrollto" href="#schedule">Schedule</a>
+          <a class="nav-link scrollto" href="#organizers">Organizers</a>
+          <a class="nav-link scrollto" href="#contact">Contact</a> 
+      </nav>
     </div>
   </header><!-- End Header -->
 
@@ -60,7 +53,7 @@
       </div>
       <div class="container" style="position:relative;z-index:1;">
         <p
-          style="background: #ffffff50; display: inline-block; padding: 0 0.5em; border-radius: 99999rem; backdrop-filter: blur(10px);">
+          style="background: #ffffff50; display: inline-block; padding: 0.5em 0.5em; border-radius: 1rem; backdrop-filter: blur(10px); text-align: center;">
           <strong>Date:</strong> Sat Dec 6th &nbsp; | &nbsp; <strong>Location:</strong> San Diego Convention Center, San
           Diego, USA
         </p>
@@ -200,19 +193,19 @@
         <!-- Important Dates -->
         <h3 id="important-dates">Important Dates <small>(Anywhere on Earth)</small></h3>
         <table class="important-dates">
-          <tr>
+          <tr class="important-date-row">
             <td><time datetime="2025-08-22"><strong>Aug 22</strong>&nbsp;</time></td>
             <td>Paper Submission Deadline</td>
           </tr>
-          <tr>
+          <tr class="important-date-row">
             <td><time datetime="2025-09-22"><strong>Sep 22</strong>&nbsp;</time></td>
             <td>Notification of Acceptance</td>
           </tr>
-          <tr>
+          <tr class="important-date-row">
             <td><time datetime="2025-10-10"><strong>Oct 10</strong>&nbsp;</time></td>
             <td>Camera‑ready Paper Submission</td>
           </tr>
-          <tr>
+          <tr class="important-date-row">
             <td><time datetime="2025-12-06"><strong>Dec 6</strong>&nbsp;</time></td>
             <td>Workshop at NeurIPS</td>
           </tr>
@@ -462,8 +455,7 @@
         <!-- organizers -->
         <div class="organizers-grid">
           <a href="https://ghli.org/" target="_blank" class="organizer-card" style="position: relative;">
-            <div class="organizer-role"
-              style="position: absolute; top: 0.5rem; left: 0.5rem; background: #4c19e8; color: white; font-weight: 600; font-size: 0.65em; padding: 0.2em 0.6em; border-radius: 9999px; z-index: 10; transform: rotate(-15deg); box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+            <div class="organizer-role">
               Lead</div>
             <img src="./public/guohao-li.png" alt="Guohao Li" class="organizer-photo">
             <div class="organizer-info">
@@ -472,8 +464,7 @@
             </div>
           </a>
           <a href="https://www.yuanhe.wiki/" target="_blank" class="organizer-card" style="position: relative;">
-            <div class="organizer-role"
-              style="position: absolute; top: 0.5rem; left: 0.5rem; background: #4c19e8; color: white; font-weight: 600; font-size: 0.65em; padding: 0.2em 0.6em; border-radius: 9999px; z-index: 10; transform: rotate(-15deg); box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+            <div class="organizer-role">
               Lead</div>
             <img src="./public/yuan-he.png" alt="Yuan He" class="organizer-photo">
             <div class="organizer-info">
@@ -623,10 +614,10 @@
         <div class="section-content">
           <ul class="support-team-list">
             <li>
-              <strong>Web Chair:</strong> Douglas Lai
+              <strong>Web Chair:</strong> Douglas Yueming Lai
             </li>
             <li>
-              <strong>Logistics Coordinators:</strong> Some people here...
+              <strong>Logistics Coordinators:</strong> Additional members will be announced soon.
             </li>
           </ul>
           <p style="margin-top: 1.5em; font-style: italic; color: var(--color-neutral-600);">
@@ -730,13 +721,12 @@
     <section id="contact" class="fade-in">
       <div class="container">
         <ul class="contact-list">
-          <li><strong>Contact:</strong> <a href="mailto:sea-workshop-neurips2025@googlegroups.com"
-              class="contact-link">sea-workshop-neurips2025@googlegroups.com<span class="arrow-upright">
-                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M4 12L12 4M12 4H5.5M12 4V10.5" stroke="currentColor" stroke-width="1.5"
-                    stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </span></a></li>
+          <li class="contact-item"><strong>Email:</strong> <a href="mailto:sea-workshop-neurips2025@googlegroups.com" class="contact-link">sea-workshop-neurips2025@googlegroups.com<span class="arrow-upright">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 12L12 4M12 4H5.5M12 4V10.5" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span></a></li>
         </ul>
       </div>
     </section>
@@ -754,7 +744,5 @@
 
   <script src="styles/js/main.js"></script>
 </body>
-
-</html>
 
 </html>
