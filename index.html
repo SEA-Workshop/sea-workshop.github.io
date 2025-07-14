@@ -22,12 +22,13 @@
         display: none !important;
       }
     }
+
     #header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
-  }
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      width: 100%;
+    }
   </style>
 </head>
 
@@ -35,18 +36,21 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex header sticky-top">
     <div class="navbar-container">
-      <div class="navbar-title-group" style="display: flex; width: 100%; flex-direction: row; align-items: center; justify-content: flex-start; gap: 1rem;">
+      <div class="navbar-title-group"
+        style="display: flex; width: 100%; flex-direction: row; align-items: center; justify-content: flex-start; gap: 1rem;">
         <a href="https://neurips.cc/" target="_blank" class="navbar-logo">
           <img src="images/neurips.svg" alt="NeurIPS_LOGO" style="width: 100%; height: 64px;">
         </a>
-        <a href="#home" class="navbar-title" style="font-size: 1.5rem;color: var(--color-primary); font-weight: bold; font-family: 'Palatino', 'Palatino Linotype', serif; font-size: 1.5rem; display: flex; align-items: center; justify-content: flex-start; width: auto; gap: 1rem;">SEA Workshop 2025</a>
+        <a href="#home" class="navbar-title"
+          style="font-size: 1.5rem;color: var(--color-primary); font-weight: bold; font-family: 'Palatino', 'Palatino Linotype', serif; font-size: 1.5rem; display: flex; align-items: center; justify-content: flex-start; width: auto; gap: 1rem;">SEA
+          Workshop 2025</a>
       </div>
       <nav id="navbar" class="navbar" style="display: flex; justify-content: flex-end;">
-          <a class="nav-link scrollto" href="#call-for-papers">Call for Papers</a>
-          <a class="nav-link scrollto" href="#speakers">Speakers</a>
-          <a class="nav-link scrollto" href="#schedule">Schedule</a>
-          <a class="nav-link scrollto" href="#organizers">Organizers</a>
-          <a class="nav-link scrollto" href="#contact">Contact</a> 
+        <a class="nav-link scrollto" href="#call-for-papers">Call for Papers</a>
+        <a class="nav-link scrollto" href="#speakers">Speakers</a>
+        <a class="nav-link scrollto" href="#schedule">Schedule</a>
+        <a class="nav-link scrollto" href="#organizers">Organizers</a>
+        <a class="nav-link scrollto" href="#contact">Contact</a>
       </nav>
     </div>
   </header><!-- End Header -->
@@ -233,36 +237,44 @@
       <div class="container">
         <div class="section-header-component">
           <div class="section-header-row">
-            <span class="section-header-title">Invited Speakers and Panelists (Tentative)</span>
+            <span class="section-header-title">Invited Speakers (Tentative)</span>
             <span class="section-header-subtitle">Scaling Environments for Agents</span>
           </div>
         </div>
         <!-- speakers -->
         <div class="speakers-title" style="margin-top:2rem; margin-bottom:1rem;">
-          <h3>Invited Speakers</h3>
+          <!-- <h3>Invited Speakers</h3> -->
         </div>
         <div class="organizers-grid">
           <a href="https://rockt.ai/" target="_blank" class="organizer-card">
             <img src="./public/tim-rocktaschel.png" alt="Tim Rocktäschel" class="organizer-photo">
             <div class="organizer-info">
               <div class="organizer-name">Tim Rocktäschel</div>
-              <div class="organizer-org">Professor, UCL; Director, Google DeepMind</div>
+              <div class="organizer-org">UCL, Google DeepMind</div>
             </div>
           </a>
 
-          <a href="https://www.egrefen.com/" target="_blank" class="organizer-card">
+          <!-- <a href="https://www.egrefen.com/" target="_blank" class="organizer-card">
             <img src="./public/edward-grefenstette.png" alt="Edward Grefenstette" class="organizer-photo">
             <div class="organizer-info">
               <div class="organizer-name">Edward Grefenstette</div>
               <div class="organizer-org">Director of Research, Google DeepMind</div>
             </div>
-          </a>
+          </a> -->
 
           <a href="https://rraileanu.github.io/" target="_blank" class="organizer-card">
             <img src="./public/roberta-raileanu.png" alt="Roberta Raileanu" class="organizer-photo">
             <div class="organizer-info">
               <div class="organizer-name">Roberta Raileanu</div>
-              <div class="organizer-org">Research Scientist, Meta GenAI</div>
+              <div class="organizer-org">Google DeepMind</div>
+            </div>
+          </a>
+
+          <a href="https://gregoiremialon.github.io/" target="_blank" class="organizer-card">
+            <img src="./public/gregoire-mialon.png" alt="Grégoire Mialon" class="organizer-photo">
+            <div class="organizer-info">
+              <div class="organizer-name">Grégoire Mialon</div>
+              <div class="organizer-org">Meta</div>
             </div>
           </a>
 
@@ -270,7 +282,7 @@
             <img src="./public/shuyan-zhou.png" alt="Shuyan Zhou" class="organizer-photo">
             <div class="organizer-info">
               <div class="organizer-name">Shuyan Zhou</div>
-              <div class="organizer-org">Incoming Assistant Professor, Duke University</div>
+              <div class="organizer-org">Duke University</div>
             </div>
           </a>
 
@@ -278,7 +290,7 @@
             <img src="./public/qian-huang.png" alt="Qian Huang" class="organizer-photo">
             <div class="organizer-info">
               <div class="organizer-name">Qian Huang</div>
-              <div class="organizer-org">Member of Technical Staff, xAI</div>
+              <div class="organizer-org">xAI</div>
             </div>
           </a>
 
@@ -286,13 +298,13 @@
             <img src="./public/mike-merrill.png" alt="Mike A. Merrill" class="organizer-photo">
             <div class="organizer-info">
               <div class="organizer-name">Mike A. Merrill</div>
-              <div class="organizer-org">Postdoctoral Researcher, Stanford</div>
+              <div class="organizer-org">Stanford</div>
             </div>
           </a>
 
         </div>
         <!-- panelists -->
-        <div class="panelists-title" style="margin-top:2rem; margin-bottom:1rem;">
+        <!-- <div class="panelists-title" style="margin-top:2rem; margin-bottom:1rem;">
           <h3>Panelists</h3>
         </div>
         <div class="organizers-grid">
@@ -312,14 +324,6 @@
             </div>
           </a>
 
-          <a href="https://gregoiremialon.github.io/" target="_blank" class="organizer-card">
-            <img src="./public/gregoire-mialon.png" alt="Grégoire Mialon" class="organizer-photo">
-            <div class="organizer-info">
-              <div class="organizer-name">Grégoire Mialon</div>
-              <div class="organizer-org">Sr. Research Scientist, Meta GenAI</div>
-            </div>
-          </a>
-
           <a href="https://animesh.garg.tech/" target="_blank" class="organizer-card">
             <img src="./public/animesh-garg.png" alt="Animesh Garg" class="organizer-photo">
             <div class="organizer-info">
@@ -327,15 +331,6 @@
               <div class="organizer-org">Assistant Professor, Georgia Tech</div>
             </div>
           </a>
-
-          <!-- <a href="https://eps.leeds.ac.uk/computing/staff/76/professor-anthony-tony-g-cohn-freng-flsw-ceng-citp"
-            target="_blank" class="organizer-card">
-            <img src="./public/anthony-tony-g-cohn.png" alt="Anthony (Tony) G Cohn" class="organizer-photo">
-            <div class="organizer-info">
-              <div class="organizer-name">Anthony (Tony) G Cohn</div>
-              <div class="organizer-org">Professor, University of Leeds</div>
-            </div>
-          </a> -->
 
           <a href="https://www.microsoft.com/applied-sciences/people/eric-sommerlade" target="_blank"
             class="organizer-card">
@@ -345,7 +340,7 @@
               <div class="organizer-org">Research Manager, Microsoft</div>
             </div>
           </a>
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -735,12 +730,13 @@
     <section id="contact" class="fade-in">
       <div class="container">
         <ul class="contact-list">
-          <li class="contact-item"><strong>Email:</strong> <a href="mailto:sea-workshop-neurips2025@googlegroups.com" class="contact-link">sea-workshop-neurips2025@googlegroups.com<span class="arrow-upright">
-            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 12L12 4M12 4H5.5M12 4V10.5" stroke="currentColor" stroke-width="1.5"
-                stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-          </span></a></li>
+          <li class="contact-item"><strong>Email:</strong> <a href="mailto:sea-workshop-neurips2025@googlegroups.com"
+              class="contact-link">sea-workshop-neurips2025@googlegroups.com<span class="arrow-upright">
+                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 12L12 4M12 4H5.5M12 4V10.5" stroke="currentColor" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span></a></li>
         </ul>
       </div>
     </section>
