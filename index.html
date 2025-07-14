@@ -22,12 +22,18 @@
         display: none !important;
       }
     }
+    #header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  }
   </style>
 </head>
 
 <body>
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex header">
+  <header id="header" class="fixed-top d-flex header sticky-top">
     <div class="navbar-container">
       <div class="navbar-title-group" style="display: flex; width: 100%; flex-direction: row; align-items: center; justify-content: flex-start; gap: 1rem;">
         <a href="https://neurips.cc/" target="_blank" class="navbar-logo">
