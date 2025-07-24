@@ -1025,6 +1025,8 @@ footer {
   }
   .navbar-container {
     padding: 0;
+    width: 100%;
+    justify-content: center;
   }
   .navbar-logo a {
     font-size: 1rem;
@@ -1054,6 +1056,18 @@ footer {
   }
   .section-header-component {
     padding-bottom: 2rem;
+  }
+  /* Make the navbar logo image smaller on mobile */
+  .navbar-logo img {
+    height: 36px !important;
+    max-width: 80px !important;
+  }
+  /* Make the navbar title text smaller on mobile */
+  .navbar-title {
+    font-size: 1rem !important;
+  }
+  .navbar-title-group {
+    justify-content: center;
   }
 }
 
