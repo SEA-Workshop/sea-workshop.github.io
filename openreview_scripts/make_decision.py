@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Extract decisions & flag low-score accepts for NeurIPS.cc/2025/Workshop/SEA.
+Extract decisions & flag low-score accepts (based on AC meta-review) for NeurIPS.cc/2025/Workshop/SEA.
 
 Outputs:
   1) sea_decisions.csv               (columns: paper_number, decision, comment)
