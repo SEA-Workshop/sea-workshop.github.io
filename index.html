@@ -66,6 +66,16 @@
       border-radius: 10px;
       display: block;
     }
+
+    /* Schedule cards hover effects */
+    .schedule-card {
+      transition: all var(--transition-fast);
+    }
+    .schedule-card:hover {
+      box-shadow: 0 4px 24px rgba(76,25,232,0.13);
+      transform: scale(1.02);
+      text-decoration: none;
+    }
   </style>
 </head>
 
@@ -362,13 +372,13 @@
             </div>
           </a> -->
 
-          <a href="https://www.egrefen.com/" target="_blank" class="organizer-card">
+         <!-- <a href="https://www.egrefen.com/" target="_blank" class="organizer-card">
             <img src="./public/edward-grefenstette.png" alt="Edward Grefenstette" class="organizer-photo">
             <div class="organizer-info">
               <div class="organizer-name">Edward Grefenstette</div>
               <div class="organizer-org">Google DeepMind</div>
             </div>
-          </a>
+          </a> -->
 
           <a href="https://eps.leeds.ac.uk/computing/staff/76/professor-anthony-tony-g-cohn-freng-flsw-ceng-citp"
             target="_blank" class="organizer-card">
@@ -414,11 +424,30 @@
       <div class="container">
         <div class="section-header-component">
           <div class="section-header-row">
-            <span class="section-header-title">Schedule (Tentative)</span>
+            <span class="section-header-title">Schedule</span>
             <span class="section-header-subtitle">Scaling Environments for Agents</span>
           </div>
         </div>
-        <div class="row">
+        <div style="display: flex; margin-top: 2rem; margin-bottom: 2rem; flex-wrap: wrap;">
+          <!-- Card 1: NeurIPS Schedule -->
+          <a href="https://neurips.cc/virtual/2025/loc/san-diego/workshop/109540" target="_blank" rel="noopener" 
+             class="schedule-card"
+             style="flex: 1; min-width: 280px; background: var(--color-white); padding: 2rem; border: 0.5px solid var(--color-neutral-200); text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; min-height: 320px;">
+            <div style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--color-primary);">📅</div>
+            <div style="font-size: var(--font-size-lg); font-weight: var(--font-weight-semibold); color: var(--color-primary); margin-bottom: 0.5rem;">View Schedule on NeurIPS2025</div>
+            <div style="font-size: var(--font-size-sm); color: var(--color-neutral-600);">(Login required)</div>
+          </a>
+          
+          <!-- Card 2: Our Site Schedule -->
+          <a href="schedule.html" 
+             class="schedule-card"
+             style="flex: 1; min-width: 280px; background: var(--color-white); padding: 2rem; border: 0.5px solid var(--color-neutral-200); text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; min-height: 320px;">
+            <div style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--color-primary);">📋</div>
+            <div style="font-size: var(--font-size-lg); font-weight: var(--font-weight-semibold); color: var(--color-primary); margin-bottom: 0.5rem;">View Schedule on our site</div>
+            <div style="font-size: var(--font-size-sm); color: var(--color-neutral-600);">No login required</div>
+          </a>
+        </div>
+        <!-- <div class="row">
           <div class="col-lg-12">
             <div class="schedule-table">
               <table class="table">
@@ -427,7 +456,7 @@
                     <th scope="col">Time</th>
                     <th scope="col">Session</th>
                     <th scope="col">Duration</th>
-                    <!-- <th scope="col">Note</th> -->
+                    <th scope="col">Note</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -521,7 +550,7 @@
               </table>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -542,7 +571,7 @@
             <table class="table">
               <thead>
                 <tr>
-                  <th scope="col" style="width: 10%;">No.</th>
+                  <th scope="col" style="width: 10%;">Paper ID</th>
                   <th scope="col" style="width: 50%;">Title</th>
                   <th scope="col" style="width: 40%;">Authors</th>
                 </tr>
@@ -610,7 +639,7 @@
             <table class="table">
               <thead>
                 <tr>
-                  <th scope="col" style="width: 10%;">No.</th>
+                  <th scope="col" style="width: 10%;">Paper ID</th>
                   <th scope="col" style="width: 50%;">Title</th>
                   <th scope="col" style="width: 40%;">Authors</th>
                 </tr>
