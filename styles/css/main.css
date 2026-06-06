@@ -979,7 +979,8 @@ footer {
 .important-dates td:first-child {
   font-weight: bold;
   color: var(--color-primary);
-  width: 120px;
+  width: 180px;
+  min-width: 180px;
   white-space: nowrap;
 }
 .important-dates td:last-child {

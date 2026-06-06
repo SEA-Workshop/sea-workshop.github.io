@@ -154,6 +154,16 @@ bentoTopics.forEach(topic => {
   });
 });
 
+// Close year dropdown when clicking outside
+document.addEventListener('click', function(e) {
+  const dropdown = document.getElementById('yearDropdown');
+  if (dropdown && !dropdown.contains(e.target)) {
+    dropdown.classList.remove('open');
+    const btn = dropdown.querySelector('.year-dropdown-btn');
+    if (btn) btn.setAttribute('aria-expanded', 'false');
+  }
+});
+
 // Hero Section Wave Animation
 (function() {
   const hero = document.getElementById("home");

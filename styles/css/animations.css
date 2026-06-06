@@ -10,6 +10,12 @@
   transform: translateY(0);
 }
 
+/* Hero fades in automatically on page load — no scroll trigger needed */
+.hero.fade-in {
+  transition: none;
+  animation: fadeUp 0.9s ease 0.1s both;
+}
+
 /* Hero Animation */
 .hero .hero-content h1 {
   opacity: 0;

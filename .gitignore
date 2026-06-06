@@ -148,3 +148,8 @@ pids
 # Temporary files
 *.tmp
 *.temp
+
+# Local dev preview artifacts
+.claude/
+serve-dev.js
+vite.config.js
