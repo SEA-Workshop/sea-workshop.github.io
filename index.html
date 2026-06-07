@@ -271,14 +271,6 @@
           embodied control, and multi-agent collaboration, while also supporting increasingly complex and long-horizon
           tasks? How can tasks, rewards, and verifiers be generated and adapted automatically? And how can reliable
           supervision be maintained while avoiding reward hacking, spurious shortcuts, and brittle evaluation protocols?</p>
-        <p>We propose the second edition of the full-day, in-person workshop on “Scaling Environments for Agents
-          (SEA),” dedicated to the emerging challenges of environment-based agent training. Building on the inaugural SEA
-          workshop, this edition has three goals: (i) to map the current landscape of environment infrastructure,
-          coverage, design, synthesis, and self-evolving environment research; (ii) to bridge communities across
-          academia and industry, and across domains including coding, science, GUI/embodied agents, systems, and
-          multi-agent learning; and (iii) to articulate the future requirements for environments as scalable training
-          substrates, with particular emphasis on diversity, parallelism, verifiability, long-horizon design, and robust
-          agent–environment co-evolution.</p>
       </div>
     </section>
 
@@ -296,56 +288,67 @@
             <div class="bento-topic" data-img="topic1.png">
               <span class="bento-num">1</span>
               <div class="bento-topic-content">
-                <span class="bento-title">Environment Infrastructure, Benchmarks, and Evaluation</span>
-                <span class="bento-desc">Open-source frameworks, sandboxing, and novel benchmarks.</span>
+                <span class="bento-title">Environment Design and Benchmarking</span>
+                <span class="bento-desc">Task and environment design, benchmark construction, curriculum design, reward
+                  and verifier development, and evaluation robustness.</span>
               </div>
             </div>
             <div class="bento-topic" data-img="topic2.png">
               <span class="bento-num">2</span>
               <div class="bento-topic-content">
-                <span class="bento-title">Environment Synthesis and Self-Evolving Environments</span>
-                <span class="bento-desc">Environment synthesis, environment–agent co-evolution, and open-ended problem
-                  environment design.</span>
+                <span class="bento-title">Self-Evolving Environments, Harnesses, and Agents</span>
+                <span class="bento-desc">Agent–environment co-evolution; self-improving harnesses; open-ended learning;
+                  task and environment synthesis.</span>
               </div>
             </div>
             <div class="bento-topic" data-img="topic3.png">
               <span class="bento-num">3</span>
               <div class="bento-topic-content">
-                <span class="bento-title">World Models as Learned Environments</span>
-                <span class="bento-desc">Neural simulators for agent training; fidelity, controllability, and grounding;
-                  the boundary between learned and hand-engineered environments.</span>
+                <span class="bento-title">Environment and Rollout Infrastructure</span>
+                <span class="bento-desc">Scalable and reliable rollout generation, concurrent tool execution, sandboxing,
+                  state and context management, fault tolerance, observability, reproducibility, and integration with
+                  agent training systems.</span>
               </div>
             </div>
             <div class="bento-topic" data-img="topic4.png">
               <span class="bento-num">4</span>
               <div class="bento-topic-content">
-                <span class="bento-title">Coding and Terminal Environments</span>
-                <span class="bento-desc">End-to-end software and terminal environments with long-horizon reasoning and
-                  task execution.</span>
+                <span class="bento-title">Terminal and Software Engineering Environments</span>
+                <span class="bento-desc">Long-horizon environments for code generation, debugging, repository-level
+                  software engineering, terminal use, and system administration.</span>
               </div>
             </div>
             <div class="bento-topic" data-img="topic5.png">
               <span class="bento-num">5</span>
               <div class="bento-topic-content">
-                <span class="bento-title">Multimodal GUI and Embodied Environments</span>
-                <span class="bento-desc">Computer-use agents over browser, desktop, and mobile; multimodal reasoning and
-                  sim-to-real for robotics.</span>
+                <span class="bento-title">GUI, Multimodal, and Embodied Environments</span>
+                <span class="bento-desc">Browser, desktop, and mobile interaction; multimodal perception and action;
+                  robotics, simulation, and sim-to-real transfer.</span>
               </div>
             </div>
             <div class="bento-topic" data-img="topic6.png">
               <span class="bento-num">6</span>
               <div class="bento-topic-content">
-                <span class="bento-title">Science and Auto-Research Environments</span>
-                <span class="bento-desc">Environments for autonomous experimentation; AI scientists aiding science
-                  discovery including material, biology, and beyond.</span>
+                <span class="bento-title">Scientific Discovery and Autonomous Research Environments</span>
+                <span class="bento-desc">Environments for experimentation, hypothesis generation, scientific workflows,
+                  and autonomous discovery in domains such as biology, chemistry, and materials science.</span>
               </div>
             </div>
             <div class="bento-topic" data-img="topic7.png">
               <span class="bento-num">7</span>
               <div class="bento-topic-content">
                 <span class="bento-title">Multi-Agent and Social Environments</span>
-                <span class="bento-desc">Scaling agent populations, emergent cooperation and competition, multi-agent RL
-                  with LLM agents, and coordination in shared environments.</span>
+                <span class="bento-desc">Shared environments for cooperation, competition, negotiation, coordination,
+                  population-based learning, and multi-agent training.</span>
+              </div>
+            </div>
+            <div class="bento-topic" data-img="topic8.png">
+              <span class="bento-num">8</span>
+              <div class="bento-topic-content">
+                <span class="bento-title">World Models and Learned Environments</span>
+                <span class="bento-desc">Learned environment dynamics and simulators for agent training, including
+                  fidelity, controllability, grounding, model bias, and transfer between learned, programmatic, and real
+                  environments.</span>
               </div>
             </div>
           </div>
@@ -383,7 +386,7 @@
           <strong>200+ reviewers</strong>, with each paper receiving three reviews and final acceptance decisions made by
           the organizing committee with clear conflict-of-interest enforcement. All accepted papers will be
           <strong>non-archival</strong>, consistent with NeurIPS workshop policy, and will be presented in poster
-          sessions. We will additionally select <strong>three Spotlight papers</strong> and one
+          sessions. We will additionally select <strong>5&ndash;10 Spotlight papers</strong> and one
           <strong>Best Paper Award</strong>.
         </p>
         <br>
@@ -454,25 +457,25 @@
               <div class="organizer-org">Elorian</div>
             </div>
           </a>
-          <a href="https://cs.stanford.edu/~diyiy/" target="_blank" class="organizer-card">
-            <img src="./public/2026/diyi-yang.png" alt="Diyi Yang" class="organizer-photo">
+          <a href="https://x.com/_arohan_" target="_blank" class="organizer-card">
+            <img src="./public/2026/rohan-anil.png" alt="Rohan Anil" class="organizer-photo">
             <div class="organizer-info">
-              <div class="organizer-name">Diyi Yang</div>
-              <div class="organizer-org">Stanford University</div>
+              <div class="organizer-name">Rohan Anil</div>
+              <div class="organizer-org">Core Automation</div>
             </div>
           </a>
-          <a href="https://pranjal2041.github.io/" target="_blank" class="organizer-card">
-            <img src="./public/2026/pranjal-aggarwal.png" alt="Pranjal Aggarwal" class="organizer-photo">
+          <a href="https://jeffclune.com/" target="_blank" class="organizer-card">
+            <img src="./public/2026/jeff-clune.png" alt="Jeff Clune" class="organizer-photo">
             <div class="organizer-info">
-              <div class="organizer-name">Pranjal Aggarwal</div>
-              <div class="organizer-org">Carnegie Mellon University</div>
+              <div class="organizer-name">Jeff Clune</div>
+              <div class="organizer-org">Recursive, UBC &amp; Vector Institute</div>
             </div>
           </a>
-          <a href="https://www.kexinhuang.com/" target="_blank" class="organizer-card">
-            <img src="./public/2026/kexin-huang.png" alt="Kexin Huang" class="organizer-photo">
+          <a href="https://rossjtaylor.com/" target="_blank" class="organizer-card">
+            <img src="./public/2026/ross-taylor.png" alt="Ross Taylor" class="organizer-photo">
             <div class="organizer-info">
-              <div class="organizer-name">Kexin Huang</div>
-              <div class="organizer-org">Phylo</div>
+              <div class="organizer-name">Ross Taylor</div>
+              <div class="organizer-org">General Reasoning</div>
             </div>
           </a>
         </div>
@@ -488,11 +491,11 @@
               <div class="organizer-org">Anthropic</div>
             </div>
           </a>
-          <a href="https://jeffclune.com/" target="_blank" class="organizer-card">
-            <img src="./public/2026/jeff-clune.png" alt="Jeff Clune" class="organizer-photo">
+          <a href="https://cs.stanford.edu/~diyiy/" target="_blank" class="organizer-card">
+            <img src="./public/2026/diyi-yang.png" alt="Diyi Yang" class="organizer-photo">
             <div class="organizer-info">
-              <div class="organizer-name">Jeff Clune</div>
-              <div class="organizer-org">Recursive, UBC &amp; Vector Institute</div>
+              <div class="organizer-name">Diyi Yang</div>
+              <div class="organizer-org">Stanford University</div>
             </div>
           </a>
           <a href="https://petiushko.info/" target="_blank" class="organizer-card">
@@ -502,18 +505,18 @@
               <div class="organizer-org">Logical Intelligence</div>
             </div>
           </a>
-          <a href="https://x.com/_arohan_" target="_blank" class="organizer-card">
-            <img src="./public/2026/rohan-anil.png" alt="Rohan Anil" class="organizer-photo">
+          <a href="https://pranjal2041.github.io/" target="_blank" class="organizer-card">
+            <img src="./public/2026/pranjal-aggarwal.png" alt="Pranjal Aggarwal" class="organizer-photo">
             <div class="organizer-info">
-              <div class="organizer-name">Rohan Anil</div>
-              <div class="organizer-org">Core Automation</div>
+              <div class="organizer-name">Pranjal Aggarwal</div>
+              <div class="organizer-org">Carnegie Mellon University</div>
             </div>
           </a>
-          <a href="https://rossjtaylor.com/" target="_blank" class="organizer-card">
-            <img src="./public/2026/ross-taylor.png" alt="Ross Taylor" class="organizer-photo">
+          <a href="https://www.kexinhuang.com/" target="_blank" class="organizer-card">
+            <img src="./public/2026/kexin-huang.png" alt="Kexin Huang" class="organizer-photo">
             <div class="organizer-info">
-              <div class="organizer-name">Ross Taylor</div>
-              <div class="organizer-org">General Reasoning</div>
+              <div class="organizer-name">Kexin Huang</div>
+              <div class="organizer-org">Phylo</div>
             </div>
           </a>
         </div>
@@ -538,19 +541,22 @@
               </tr>
             </thead>
             <tbody>
-              <tr><td>09:00</td><td>Opening Remarks</td></tr>
-              <tr><td>09:10</td><td>Contributed Talks 1 &amp; 2</td></tr>
-              <tr><td>10:00</td><td>Coffee Break</td></tr>
-              <tr><td>10:20</td><td>Poster Session 1</td></tr>
-              <tr><td>11:10</td><td>Invited Talks 1 &amp; 2</td></tr>
-              <tr><td>12:10</td><td>Lunch Break</td></tr>
-              <tr><td>13:00</td><td>Invited Talks 3 &amp; 4</td></tr>
-              <tr><td>14:00</td><td>Coffee Break</td></tr>
-              <tr><td>14:20</td><td>Contributed Talks 3 &amp; 4</td></tr>
-              <tr><td>15:10</td><td>Poster Session 2</td></tr>
-              <tr><td>16:00</td><td>Invited Talks 5 &amp; 6</td></tr>
-              <tr><td>17:00</td><td>Panel Discussion</td></tr>
-              <tr><td>17:50</td><td>Closing Remarks</td></tr>
+              <tr><td>08:00</td><td>Opening Remarks</td></tr>
+              <tr><td>08:15</td><td>Invited Talk 1</td></tr>
+              <tr><td>09:00</td><td>Invited Talk 2</td></tr>
+              <tr><td>09:45</td><td>Morning Break</td></tr>
+              <tr><td>10:00</td><td>Spotlight Talks (Session 1)</td></tr>
+              <tr><td>10:30</td><td>Invited Talk 3</td></tr>
+              <tr><td>11:15</td><td>Invited Talk 4</td></tr>
+              <tr><td>12:00</td><td>Lunch Break</td></tr>
+              <tr><td>12:10</td><td>Poster Session 1</td></tr>
+              <tr><td>13:10</td><td>Spotlight Talks (Session 2)</td></tr>
+              <tr><td>13:30</td><td>Invited Talk 5</td></tr>
+              <tr><td>14:15</td><td>Invited Talk 6</td></tr>
+              <tr><td>15:00</td><td>Afternoon Break</td></tr>
+              <tr><td>15:10</td><td>Panel Discussion</td></tr>
+              <tr><td>15:50</td><td>Poster Session 2</td></tr>
+              <tr><td>16:50</td><td>Closing Remarks</td></tr>
             </tbody>
           </table>
         </div>
@@ -584,19 +590,11 @@
         </div>
         <div class="organizers-grid">
           <a href="https://ghli.org/" target="_blank" class="organizer-card" style="position: relative;">
-            <div class="organizer-role">Lead</div>
+            <div class="organizer-role">Co-Lead</div>
             <img src="./public/2026/guohao-li.png" alt="Guohao Li" class="organizer-photo">
             <div class="organizer-info">
               <div class="organizer-name">Guohao Li</div>
               <div class="organizer-org">CAMEL-AI.org & Eigent.AI</div>
-            </div>
-          </a>
-          <a href="https://www.yuanhe.wiki/" target="_blank" class="organizer-card" style="position: relative;">
-            <div class="organizer-role">Lead</div>
-            <img src="./public/2026/yuan-he.png" alt="Yuan He" class="organizer-photo">
-            <div class="organizer-info">
-              <div class="organizer-name">Yuan He</div>
-              <div class="organizer-org">Amazon</div>
             </div>
           </a>
           <a href="https://scholar.google.com/citations?user=ctd1FOcAAAAJ&amp;hl=en" target="_blank" class="organizer-card" style="position: relative;">
@@ -605,6 +603,14 @@
             <div class="organizer-info">
               <div class="organizer-name">Qijia Shen</div>
               <div class="organizer-org">Eigent.AI</div>
+            </div>
+          </a>
+          <a href="https://www.yuanhe.wiki/" target="_blank" class="organizer-card" style="position: relative;">
+            <div class="organizer-role">Co-Lead</div>
+            <img src="./public/2026/yuan-he.png" alt="Yuan He" class="organizer-photo">
+            <div class="organizer-info">
+              <div class="organizer-name">Yuan He</div>
+              <div class="organizer-org">Amazon</div>
             </div>
           </a>
           <a href="https://yutongbai.com/" target="_blank" class="organizer-card">
