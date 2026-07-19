@@ -23,7 +23,7 @@
     content="Just as scaling the model size, dataset size, and training computation has led to emergent capabilities in LLMs, scaling the structure, fidelity, and diversity of environments is one of the crucial dimensions in advancing agent intelligence. ">
   <meta name="twitter:image" content="https://sea-workshop.github.io/images/thumbnail.png?v=2">
   <!-- Canonical -->
-  <link rel="canonical" href="https://sea-workshop.github.io">
+  <link rel="canonical" href="https://sea-workshop.github.io/2025/">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
   <link rel="stylesheet" href="/styles/css/reset.css">
   <link rel="stylesheet" href="/styles/css/main.css">
@@ -80,87 +80,6 @@
       text-decoration: none;
     }
 
-    /* Year dropdown */
-    .year-dropdown {
-      position: relative;
-      flex-shrink: 0;
-      margin-left: 1rem;
-    }
-    .year-dropdown-btn {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      background: rgba(76, 25, 232, 0.07);
-      border: 1px solid rgba(76, 25, 232, 0.18);
-      border-radius: 8px;
-      padding: 5px 11px;
-      font-size: 0.84rem;
-      font-weight: 600;
-      color: var(--color-primary);
-      cursor: pointer;
-      white-space: nowrap;
-      font-family: inherit;
-      transition: background 0.18s;
-    }
-    .year-dropdown-btn:hover {
-      background: rgba(76, 25, 232, 0.14);
-    }
-    .year-dropdown-btn svg {
-      width: 12px;
-      height: 12px;
-      transition: transform 0.2s;
-    }
-    .year-dropdown.open .year-dropdown-btn svg {
-      transform: rotate(180deg);
-    }
-    .year-dropdown-menu {
-      display: none;
-      position: absolute;
-      right: 0;
-      top: calc(100% + 6px);
-      background: #fff;
-      border: 1px solid var(--color-neutral-200);
-      border-radius: 10px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      min-width: 140px;
-      z-index: 2000;
-      overflow: hidden;
-    }
-    .year-dropdown.open .year-dropdown-menu {
-      display: block;
-    }
-    .year-dropdown-item {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 8px;
-      padding: 10px 14px;
-      font-size: 0.88rem;
-      font-weight: 500;
-      color: var(--color-neutral-700);
-      text-decoration: none;
-      transition: background 0.15s;
-    }
-    .year-dropdown-item:hover {
-      background: var(--color-neutral-100);
-      text-decoration: none;
-    }
-    .year-dropdown-item.active {
-      color: var(--color-primary);
-      font-weight: 700;
-    }
-    .year-current-badge {
-      font-size: 0.68rem;
-      font-weight: 600;
-      letter-spacing: 0.03em;
-      background: rgba(76, 25, 232, 0.09);
-      color: var(--color-primary);
-      padding: 1px 6px;
-      border-radius: 99rem;
-    }
-    @media (max-width: 991px) {
-      .year-dropdown { margin-left: auto; }
-    }
   </style>
 </head>
 
@@ -184,21 +103,6 @@
         <a class="nav-link scrollto" href="#organizers">Organizers</a>
         <a class="nav-link scrollto" href="#support-team">Contact</a>
       </nav>
-      <div class="year-dropdown" id="yearDropdown">
-        <button class="year-dropdown-btn" aria-haspopup="listbox" aria-expanded="false"
-          onclick="this.closest('.year-dropdown').classList.toggle('open'); this.setAttribute('aria-expanded', this.closest('.year-dropdown').classList.contains('open'))">
-          2025
-          <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </button>
-        <div class="year-dropdown-menu" role="listbox">
-          <a href="/" class="year-dropdown-item" role="option">2026</a>
-          <a href="/2025/" class="year-dropdown-item active" role="option">
-            2025 <span class="year-current-badge">current</span>
-          </a>
-        </div>
-      </div>
     </div>
   </header><!-- End Header -->
 
@@ -1589,7 +1493,7 @@
         Scaling the structure, fidelity, and interactivity of environments is not just a technical challenge—it's the
         next frontier in building intelligent, autonomous agents.
       </blockquote>
-      <p class="footer-text">&copy; SEA @ NeurIPS 2025. All rights reserved. &nbsp;|&nbsp; <a href="/" style="color:var(--color-primary);">View SEA 2026 &rarr;</a></p>
+      <p class="footer-text">&copy; SEA @ NeurIPS 2025. All rights reserved.</p>
     </div>
   </footer>
 
