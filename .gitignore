@@ -135,6 +135,9 @@ yarn-error.log*
 .npm
 .yarn-integrity
 
+# Unpublished workshop draft
+/2026/
+
 # Logs
 logs
 *.log
