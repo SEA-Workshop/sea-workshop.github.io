@@ -103,6 +103,21 @@
         <a class="nav-link scrollto" href="#organizers">Organizers</a>
         <a class="nav-link scrollto" href="#support-team">Contact</a>
       </nav>
+      <div class="year-dropdown" id="yearDropdown">
+        <button class="year-dropdown-btn" aria-haspopup="listbox" aria-expanded="false"
+          onclick="this.closest('.year-dropdown').classList.toggle('open'); this.setAttribute('aria-expanded', this.closest('.year-dropdown').classList.contains('open'))">
+          NeurIPS 2025
+          <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <div class="year-dropdown-menu" role="listbox">
+          <a href="/2027/" class="year-dropdown-item" role="option" aria-selected="false">
+            ICLR 2027 <span class="year-latest-badge">latest</span>
+          </a>
+          <a href="/2025/" class="year-dropdown-item active" role="option" aria-selected="true">NeurIPS 2025</a>
+        </div>
+      </div>
     </div>
   </header><!-- End Header -->
 
@@ -1493,7 +1508,8 @@
         Scaling the structure, fidelity, and interactivity of environments is not just a technical challenge—it's the
         next frontier in building intelligent, autonomous agents.
       </blockquote>
-      <p class="footer-text">&copy; SEA @ NeurIPS 2025. All rights reserved.</p>
+      <p class="footer-text">&copy; SEA @ NeurIPS 2025. All rights reserved. &nbsp;|&nbsp; <a href="/2027/"
+          style="color:var(--color-primary);">View SEA @ ICLR 2027 &rarr;</a></p>
     </div>
   </footer>
 

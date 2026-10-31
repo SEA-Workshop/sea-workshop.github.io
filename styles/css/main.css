@@ -1099,3 +1099,86 @@ footer {
   justify-content: flex-start;
   gap: 1rem;
 }
+
+/* Edition switcher (top right of the header) */
+.year-dropdown {
+  position: relative;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+.year-dropdown-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(76, 25, 232, 0.07);
+  border: 1px solid rgba(76, 25, 232, 0.18);
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  cursor: pointer;
+  white-space: nowrap;
+  font-family: inherit;
+  transition: background 0.18s;
+}
+.year-dropdown-btn:hover {
+  background: rgba(76, 25, 232, 0.14);
+}
+.year-dropdown-btn svg {
+  width: 12px;
+  height: 12px;
+  transition: transform 0.2s;
+}
+.year-dropdown.open .year-dropdown-btn svg {
+  transform: rotate(180deg);
+}
+.year-dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 6px);
+  background: #fff;
+  border: 1px solid var(--color-neutral-200);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  min-width: 180px;
+  z-index: 2000;
+  overflow: hidden;
+}
+.year-dropdown.open .year-dropdown-menu {
+  display: block;
+}
+.year-dropdown-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 14px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--color-neutral-700);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+.year-dropdown-item:hover {
+  background: var(--color-neutral-100);
+  text-decoration: none;
+}
+.year-dropdown-item.active {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+.year-latest-badge {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  background: rgba(76, 25, 232, 0.09);
+  color: var(--color-primary);
+  padding: 1px 6px;
+  border-radius: 99rem;
+}
+@media (max-width: 991px) {
+  .year-dropdown { margin-left: auto; }
+}
